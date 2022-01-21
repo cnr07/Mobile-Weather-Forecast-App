@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#8baee8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Weather"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/cityName"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="city name"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/weather01d" />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/descriptionText"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="descriptionn"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/temperatureText"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31°C   H: 32°C   L: 7°C"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/lookCityName"
+            android:hint="Please type city name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:ems="10"
+            android:text="" />
+
+        <Button
+            android:backgroundTint="#c74a6f"
+            android:id="@+id/lookButton"
+            android:onClick="LookCurrentWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Look for current weather" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
